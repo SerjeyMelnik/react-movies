@@ -9,7 +9,7 @@ import Main from "./components/Main/Main";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/react-movies">
         <Header />
         <Routes>
           <Route path="/movies" element={<Main />} exact />
