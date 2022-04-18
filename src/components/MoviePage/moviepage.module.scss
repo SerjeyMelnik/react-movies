@@ -1,0 +1,70 @@
+@use "/src/styles/colors"	as	color;
+@use "/src/styles/fonts"	as	font;
+
+.movie_content{
+	box-shadow: 0 0 10px silver;
+	width: 80%;
+	margin: auto;
+	padding: 40px 30px;
+	min-height: calc(100vh - 120px);
+    box-sizing: border-box;
+}
+.movie_page{
+	
+	
+}
+.movie_top_info{
+	display: flex;
+}
+.movie_detail_info{
+	padding-left: 30px;
+}
+.movie_title{
+	font-family: font.$OpenSans;
+	text-align: center;
+	margin-top: 0;
+}
+.movie_detail_list{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style-type: none;
+		font-family: font.$Poppins;
+		padding: 3px 0;
+		span:first-child{
+			font-weight: 500;
+			font-size: 16px;
+		}
+		a{
+		margin-right:5px;
+		font-family: font.$Biz;
+		text-decoration:none;
+		color: black;
+		&:hover{
+			color: color.$app-green;
+		}
+		}
+	}
+}
+.ratings_wrapper{
+	
+	h3{
+		margin: 10px 0;
+		font-weight: 500;
+	}
+	.ratings{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.rating{
+		margin-right:5px ;
+		span:last-child{
+			margin: 0 5px;
+			font-weight: bold;
+		}
+	}
+
+}
+.description{
+	margin-top: 20px ;
+}

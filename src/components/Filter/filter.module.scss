@@ -1,0 +1,43 @@
+@use "/src/styles/colors"
+	as
+	color;
+@use "/src/styles/fonts"
+	as
+	font;
+
+.radio_wrapper{
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 15px 0;
+	padding: 0 0 0 20px;
+	box-sizing: border-box;
+}
+.radio_item{
+
+	input[type="radio"]{
+		display: none;
+	}
+	 label{
+		position: relative;
+		&::before{
+			content:"";
+			position: absolute;
+			left: -15px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			
+			border: 1px solid color.$app-green;
+		}
+	}
+	input:checked + label{
+		&::before{
+			background-color: color.$app-green;
+		}
+	}
+}

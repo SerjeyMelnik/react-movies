@@ -1,0 +1,39 @@
+@use "/src/styles/colors"
+	as
+	color;
+@use "/src/styles/fonts"
+	as
+	font;
+
+.header {
+	background-color: color.$app_green;
+	box-shadow: 0
+		2px
+		5px
+		silver;
+	&_content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.listLink {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	.li {
+		padding: 15px;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		font-family: font.$Biz;
+	}
+}
+
+.mainHeaderLink {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}

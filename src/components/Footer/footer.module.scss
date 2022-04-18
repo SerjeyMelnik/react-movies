@@ -1,0 +1,17 @@
+@use "/src/styles/colors"
+	as
+	color;
+@use "/src/styles/fonts"
+	as
+	font;
+* {
+	font-family: font.$OpenSans;
+}
+.footer_wrapper {
+	background-color: color.$app-green;
+	padding: 20px
+		0;
+}
+.copy {
+	color: white;
+}

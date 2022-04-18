@@ -1,0 +1,39 @@
+@use "/src/styles/colors"
+	as
+	color;
+.pagination_wrapper{
+display: flex;
+gap: 10px;
+margin-top: 30px;
+	
+}
+.pagination_button{
+	display: flex;
+	width: 35px;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: 2px solid color.$app_green;
+	cursor: pointer;
+	&:hover{
+		box-shadow: 0 0 3px inset color.$app_green;
+	}
+	&.current{
+		box-shadow: 0 0 5px inset color.$app_green;
+	}
+	&.arrow_left,&.arrow_right{
+		
+		span{
+			transform: translateY(-3px);
+			color: color.$app_green;
+			font-size: 35px;
+		}
+	}
+}
+.dots{
+	align-self: flex-end;
+	font-size: 30px;
+	color: color.$app_green;
+}

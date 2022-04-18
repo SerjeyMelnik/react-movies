@@ -1,0 +1,11 @@
+@use "/src/styles/fonts"
+	as
+	font;
+
+.result_info{
+	
+	&_title{
+		margin-right: 200px;
+		font-family: font.$Poppins;
+	}
+}

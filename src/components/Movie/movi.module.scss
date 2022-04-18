@@ -1,0 +1,40 @@
+@use "/src/styles/colors"	as	color;
+@use "/src/styles/fonts"	as	font;
+
+.movi_card {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 3px silver;
+	cursor: pointer;
+	transition: 0.2s;
+	&:hover{
+		//box-shadow: 1px 1px 4px  color.$app-green;
+		transform: scale(1.02);
+	}
+	&_img_wrapper {
+		flex-grow: 1;
+	}
+	&_img {
+		width: 100%;
+	}
+	&_info {
+		padding: 0 10px	10px 10px;
+	}
+	&_title {
+		margin: 5px	0 10px 0;
+		font-family: font.$OpenSans;
+		&:hover{
+			color: color.$app-green;
+		}
+	}
+	&_bottom_info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&_year {
+		font-family: font.$Poppins;
+
+	}
+	&_type {
+	}
+}

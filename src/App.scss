@@ -1,0 +1,11 @@
+@use "/src/styles/colors"
+	as
+	color;
+@use "/src/styles/fonts"
+	as
+	font;
+
+.container {
+	padding: 0
+		20px;
+}
